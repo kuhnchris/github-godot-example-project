@@ -1,0 +1,30 @@
+[gd_scene format=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 597.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CenterContainer"]
+margin_left = 362.0
+margin_top = 291.0
+margin_right = 662.0
+margin_bottom = 306.0
+rect_min_size = Vector2( 300, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "[center]It's working[/center]"
+text = "It's working"
+fit_content_height = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
