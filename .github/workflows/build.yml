@@ -18,7 +18,7 @@ jobs:
         token: ${{ secrets.MY_TOKEN || github.token }}
     - name: Build release
       id: exportGodot
-      uses: kuhnchris/gh-export-godot-project@v0.1
+      uses: kuhnchris/gh-export-godot-project@v0.2
       with:
         project-directory: "./example-project"
         export-debug: false
