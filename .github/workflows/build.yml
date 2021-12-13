@@ -10,7 +10,6 @@ env:
 
 jobs:
   buildX11:
-    needs: checkDockerImage
     name: Build project (linux)
     runs-on: ubuntu-latest
     steps:
@@ -33,7 +32,7 @@ jobs:
         name: build-linux
         path: ./export-artifacts/
         retention-days: 1         
-        
+
   createRelease:
     needs: [buildX11]
     name: Create automatic release on GitHub
